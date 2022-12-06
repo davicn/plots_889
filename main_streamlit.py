@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 # import matplotlib.pyplot as plt 
-import plotly.express as px
+# import plotly.express as px
 
 url = 'https://raw.githubusercontent.com/albertsl/datasets/master/popularidad/temporal.csv'
 
@@ -30,15 +30,15 @@ elif option=='Bar':
     st.bar_chart(data=df,
             x='Mes')
 
-elif option=='Pie':
-    x = ['a','b','c','d','e','f']
-    y = [45,67,32,20,23,78]
+# elif option=='Pie':
+#     x = ['a','b','c','d','e','f']
+#     y = [45,67,32,20,23,78]
 
-    fig = px.pie(
-        df,
-        values='data science',
-        names='categorical',
-        # title='Pizza Frango com Catupiry',
-        # color_discrete_sequence= px.colors.sequential.Oranges
-    )
-    st.plotly_chart(fig)
+#     fig = px.pie(
+#         df,
+#         values='data science',
+#         names='categorical',
+#         # title='Pizza Frango com Catupiry',
+#         # color_discrete_sequence= px.colors.sequential.Oranges
+#     )
+#     st.plotly_chart(fig)
